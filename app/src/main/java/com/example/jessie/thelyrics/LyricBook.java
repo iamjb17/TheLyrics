@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class LyricBook {
 
-
     // Create artist and lyric array
     String[] mSongs = {
             "[Maroon 5][My broken pieces, you pick'em up. Don't leave me hangin, hangin come give me some.]",
@@ -23,15 +22,12 @@ public class LyricBook {
             "[Chamillionaire][Her drank starts empying while she spilling out her life to me...]"
     };
 
-
     // Method - pull a random song from the array and send it out
     public String getSong(){
         Random mRgen = new Random();
-
         int randomNumber = mRgen.nextInt(mSongs.length);
         String line = mSongs[randomNumber];
 
         return line;
     }
-
 }
