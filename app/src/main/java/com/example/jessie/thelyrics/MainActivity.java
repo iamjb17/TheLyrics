@@ -1,6 +1,5 @@
 package com.example.jessie.thelyrics;
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView mLyricTextView;
     private Button mNextLyricButton;
     private LyricBook mLyricBook = new LyricBook();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,22 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 // Set the views to the new text
                 mArtistTextView.setText(mArtist);
                 mLyricTextView.setText(mLyric);
-
-                
-
             }
         };
-
         // Connect the listener to the button
         mNextLyricButton.setOnClickListener(listener);
     }
 
     /* Will try something different, like creating(hard coding) an array and using
-    indexOf to pull out and display different segments of the elements of that array.
+    indexOf to pull out and display different segments of the elements of that array at some
+    point when I have time.
     Same data though.
      */
-
-
 
 /*
     //// tried to use scanner class but I dont think it works in android
